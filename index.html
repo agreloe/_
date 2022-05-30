@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Soluciones en frío - DeRigo</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("PXPLQvMei_uLcqrTJ");
+    })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_7f5qefw', 'template_ce35u9p', '#myForm')
+                    .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                    console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="navbar__container">
+                <img class="logo" src="/img/logo-derigo-new.svg" alt="Logo de DeRigo Argentina">
+                <ul>
+                    <li class="inicio">
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#trabajos">Trabajos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-block">
+            <h1 class="animate__animated animate__slideInUp first-block__title">Soluciones en frío</h1>
+            <p class="animate__animated animate__slideInUp first-block__subtitle">Con el mayor ahorro energético y la mejor tecnología en frío</p>
+        </section>
+
+        <div class="banner">
+            <div class="banner__photo"></div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <section class="about" id="nosotros">
+            <div class="about__title">
+                <p>Nuestra trayectoria</p>
+                <h2>Sobre nosotros</h2>
+            </div>
+                <div class="col first">
+                    <img class="about__icon" src="/img/derigo-icon (1).png" alt="Icono de copo de nieve">
+                    <p>
+                        Con más de 40 años de experiencia en instalaciones Frigoríficas, estamos ubicados en el primer lugar en Argentina en lo que se refiere a ejecución de Obras con compresores a Tornillo.
+                    </p>
+                </div>
+                <div class="col second">
+                    <img class="about__icon" src="/img/derigo-icon (1).png" alt="Icono de copo de nieve">
+                    <p>
+                        Hemos llevado a cabo la Ingeniería, Instalación y Puesta en Marcha de los más importantes Centros de Distribución del país.
+                    </p>
+                </div>
+                <div class="col third">
+                    <img class="about__icon" src="/img/derigo-icon (1).png" alt="Icono de copo de nieve">
+                    <p>
+                        Trabajamos con tecnologías Green High Efficiency basadas en la aplicación de estrategias de ahorro energético como Low Condensing y Hot Gas Defrost, con las cuales hemos logrado un ahorro de energía de más del 30%.
+                    </p>
+                </div>
+                <div class="col fourth">
+                    <img class="about__icon" src="/img/derigo-icon (1).png" alt="Icono de copo de nieve">
+                    <p>
+                        Contamos con la respresentación oficial en Argentina de Weber Cooling, empresa de los Países Bajos dedicada a la fabricación de cámaras de enfriamiento al vacío.
+                    </p>
+                    <a href="https://webercooling.com/en/" target="_blank">
+                        <img class="weber-logo" src="https://webercooling.com/images/logo/logo-webercooling.svg" alt="Logo de la empresa Weber Cooling">
+                    </a>
+                </div>
+        </section>
+        <section class="work" id="trabajos">
+            <div class="work__title">
+                <p>Proyectos realizados</p>
+                <h2>Trabajo destacado</h2>
+            </div>
+            
+            <div class="main-gallery" data-flickity='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/DSC_0118__1__YvF1TyJXKV.jpg" alt="Centro de Distribución Robotizado La anonima">
+                    <div class="gallery-title">
+                        <h4>La Anónima - Centro de Distribución Robotizado</h4>
+                        <p>Instalación de 8 Compresores a Tornillo Bitzer Serie HS-85 con Potencia de 1045 Hp. Sistema Green High Efficiency.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/proyect-2018_-Hni4huDoc.jpg" alt="Centro de Distribución Dia">
+                    <div class="gallery-title">
+                        <h4>Dia% - Centro de Distribución</h4>
+                        <p>Instalación de 8 Compresores a Tornillo Bitzer Serie HS-74 con Potencia de 600 Hp.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/2012-wallmart-moreno-1_lXhdnQrQ2OI0j.jpg" alt="Centro de distribución Walmart Moreno">
+                    <div class="gallery-title">
+                        <h4>Walmart - Centro de distribución Moreno</h4>
+                        <p>Instalación de 6 Compresores a Tornillo Bitzer Serie HS-85 con Potencia de 795 Hp. Sistema Green High Efficiency.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="https://ik.imagekit.io/c9tj2d0xqow/tr:w-auto/wallmart-cordoba-1_sB9UGSJvQYkzg.jpg" alt="Centro de distribución Walmart Cordoba">
+                    <div class="gallery-title">
+                        <h4>Walmart - Centro de distribución Córdoba</h4>
+                        <p>Instalación de 6 Compresores a Tornillo Bitzer Serie HS-85 con Potencia de 840 Hp.</p>
+                    </div>
+                </div>
+              </div>
+            
+        </section>
+        <section class="contact" id="contacto">
+            <div class="contact__title">
+                <p>Contactanos</p>
+                <h2>Ideamos la mejor solución en frío</h2>
+            </div>
+            <div class="lottie-animation">
+                <img src="/img/logo-derigo-new.svg" alt="Logo de DeRigo Argentina">
+            </div>
+            <form id="myForm">
+                <h3 class="form-title">Contacto</h3>
+                <div class="input-container">
+                    <input type="text" name="user_name" id="nombre" required autocomplete="off" placeholder="Nombre" />
+                    <span class="input-border"></span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="user_email" id="email" required autocomplete="off" placeholder="E-Mail" />
+                    <span class="input-border"></span>
+                </div>
+                <div class="input-container">
+                    <textarea name="message" id="mensaje" resizable="false" required autocomplete="off" placeholder="Mensaje" /></textarea>
+                    <span class="input-border-textarea"></span>
+                </div>
+                <button class="submit-btn" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <img src="/img/logo-derigo-new.svg" alt="Logo de DeRigo Argentina">
+            <div class="footer__info">
+                <p>DeRigo Refrigeration Argentina | <a href='mailto: info@derigoargetina.com.ar' target='_blank' rel='noreferrer'>info@derigoargetina.com.ar</a></p>
+                <p>Copyright © 2022 derigoargentina.com.ar | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('myForm');
+
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+  setTimeout(() => {
+    form.reset();
+      }, 500)
+});
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/js/flickity.pkgd.js"></script>
+</body>
+</html>
